@@ -6,7 +6,7 @@ I build websites and mobile apps with React, from real-estate platforms to B2B c
 🚧 In progress - Target launch: 31 October 2026
 
 ## How this project is built
-I'm using Spec-Driven Development, which means that every decision is written down and agreed before code is written. The specs are the source of truth, and code is checked against their acceptance criteria and with a fixed deadline, writing the scope down first keeps me from adding features I don't have time for. It's also a learning goal: this portfolio is my first project using Spec-Driven Development. The specs that I'll be writing will give AI assistants clear context to help if needed.
+I'm using Spec-Driven Development, which means that every decision is written down and agreed before code is written. The specs are the source of truth, and code is checked against their acceptance criteria. With a fixed deadline, writing the scope down first keeps me from adding features I don't have time for. It's also a learning goal: this portfolio is my first project using Spec-Driven Development. The specs that I'll be writing will give AI assistants clear context to help if needed.
 
 ## Specs
 
