@@ -18,11 +18,20 @@
   - Hero section: my name, role and stack, plus links to my projects and my CV.
   - Project section: Cards with the logo of each project 
 
-- Contact section: GitHub, LinkedIn and Send me Email links. Serves as footer section on every page. This satisfies the "contact one click from any page" rule.
+- Contact section: serves as footer section on every page and contains:
+  - GitHub: `https://github.com/lmarques39`
+  - LinkedIn: `https://www.linkedin.com/in/lu%C3%ADs-marques39/`
+  - Email: `lfrm39@gmail.com`, shown as a link
+  
+  This satisfies the "contact one click from any page" rule.
+
+- "One click" means one click on a link that is on the current page. Scrolling doesn't count as a click. The CV link goes further than the rule and is always visible without scrolling, because getting the CV is the recruiter's main goal (US-01).
 
 - Every page has a header at the top with my name (link to Home) and a `View CV` link. This satisfies the "CV one click from any page" rule.
 
 - Custom 404 page, with an error message and a button back to the home page.
+
+
 
 ## 3. User stories
 ### US-01 - Recruiter gets my CV
@@ -39,3 +48,24 @@
 Source: Constitution §2, §5.2, §5.1
 
 
+### US-02 - Recruiter sends me an email
+
+**As a** recruiter, **I want** to email Luís from any page, **so that** I can tell him the hiring team's decision.
+
+**Acceptance criteria:**
+- **Given** I'm on any page, **when** I scroll to the footer, **then** I see Luís's email address as a link.
+- **Given** I see the email link, **when** I click it, **then** my mail app opens a new email with Luís's address already in the "To" field.
+- **Given** I have no mail app set up, **when** I look at the footer, **then** I can read Luís's full email address as text and copy it.
+- **Given** I'm on a 375px screen, **when** I scroll to the footer, **then** the email link is visible without opening a menu or scrolling sideways.
+
+Source: Constitution §2, §5.1, §5.2
+
+
+## 4. Non-functional requirements
+
+_To do._
+
+
+## 5. Open questions
+
+_None for now._
