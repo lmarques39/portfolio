@@ -13,7 +13,7 @@ I'm using Spec-Driven Development, which means that every decision is written do
 | Document | What it defines |
 | --- | --- |
 | [Constitution](specs/00-constitution.md) | Contains the **purpose**, the **target audience**, the **language**, the **projects featured**, the **principles**, the **out of scope** features that won't be touched and the **definition of done** of this project |
-| [Spec](specs/01-spec.md) | Contains the **pages**, the **decisions**, the **user stories**, the **non-functional requirement** and **open questions** of the project |
+| [Spec](specs/01-spec.md) | Contains the **pages**, the **decisions**, the **user stories**, the **non-functional requirements** and **open questions** of the project |
 | [Plan](specs/02-plan.md) | Contains the **tech stack**, the **structure**, the **testing**, the **work outside of code**, the **schedule**, the **risks** and what's the **next** step on the project |
 | [Tasks](specs/03-tasks.md) | Contains the **milestones** divided by sections with checkboxes with the tasks required to make the project |
 
