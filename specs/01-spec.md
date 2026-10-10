@@ -60,7 +60,7 @@
 
 - Feature videos: all 3 are recordings of the real projects running with fake data. Habilux and Taysil are recorded from their cleaned previews. Cuddly is recorded as two phones side by side (two caregivers): an entry logged on one phone appears on the other, which shows the live sharing feature.
 
-- Domain: the free Vercel URL (`<name>.vercel.app`) for now. A bought domain can be added later without changing this spec.
+- Domain: the free Vercel URL (`luis-marques.vercel.app`) for now. A bought domain can be added later without changing this spec.
 
 - Analytics: Vercel Analytics, which counts visits without cookies, so the site needs no cookie banner.
 

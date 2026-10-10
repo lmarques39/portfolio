@@ -15,7 +15,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: `npm run dev` shows a page and `npm run build` passes. Refs: plan §1.
 - [x] **T02 - Deploy to Vercel.** Connect the GitHub repo to Vercel.
   Done when: a push to `main` updates the public `.vercel.app` URL, served over HTTPS. Refs: NFR-09.
-- [ ] **T03 - Set up Playwright.** Two screen sizes (375×812, 1440×900) × three engines (Chromium, WebKit, Firefox), running against the production build. Add one smoke test: the home page loads.
+- [x] **T03 - Set up Playwright.** Two screen sizes (375×812, 1440×900) × three engines (Chromium, WebKit, Firefox), running against the production build. Add one smoke test: the home page loads.
   Done when: `npx playwright test` passes in all 6 combinations. Refs: plan §3.1.
 - [ ] **T04 - Content types and site content.** `content/types.ts` (SiteContent, Project) and `content/site.ts` (name, role, stack, hero text, header and footer labels, contact URLs, 404 text).
   Done when: removing any field from `site.ts` makes `npm run build` fail. Refs: NFR-03, plan §2.3.
