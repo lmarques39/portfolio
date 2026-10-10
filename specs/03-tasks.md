@@ -11,7 +11,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
 
 ## M1 - Skeleton live (by Wed 14 Oct)
 
-- [ ] **T01 - Create the app.** Next.js (App Router) + TypeScript + Tailwind CSS v4 + ESLint, in the repo root.
+- [x] **T01 - Create the app.** Next.js (App Router) + TypeScript + Tailwind CSS v4 + ESLint, in the repo root.
   Done when: `npm run dev` shows a page and `npm run build` passes. Refs: plan §1.
 - [ ] **T02 - Deploy to Vercel.** Connect the GitHub repo to Vercel.
   Done when: a push to `main` updates the public `.vercel.app` URL, served over HTTPS. Refs: NFR-09.
