@@ -19,7 +19,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: `npx playwright test` passes in all 6 combinations. Refs: plan §3.1.
 - [x] **T04 - Content types and site content.** `content/types.ts` (SiteContent, Project) and `content/site.ts` (name, role, stack, hero text, header and footer labels, contact URLs, 404 text).
   Done when: removing any field from `site.ts` makes `npm run build` fail. Refs: NFR-03, plan §2.3.
-- [ ] **T05 - `ExternalLink` component.** Every link that opens in a new tab uses it.
+- [x] **T05 - `ExternalLink` component.** Every link that opens in a new tab uses it.
   Done when: a test checks that it renders `target="_blank"` and `rel="noopener noreferrer"`. Refs: plan §2.4.
 - [ ] **T06 - CV file.** The final CV saved as `public/luis-marques-cv.pdf`.
   Done when: `/luis-marques-cv.pdf` opens on the deployed site. Refs: US-01.
