@@ -13,7 +13,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
 
 - [x] **T01 - Create the app.** Next.js (App Router) + TypeScript + Tailwind CSS v4 + ESLint, in the repo root.
   Done when: `npm run dev` shows a page and `npm run build` passes. Refs: plan §1.
-- [ ] **T02 - Deploy to Vercel.** Connect the GitHub repo to Vercel.
+- [x] **T02 - Deploy to Vercel.** Connect the GitHub repo to Vercel.
   Done when: a push to `main` updates the public `.vercel.app` URL, served over HTTPS. Refs: NFR-09.
 - [ ] **T03 - Set up Playwright.** Two screen sizes (375×812, 1440×900) × three engines (Chromium, WebKit, Firefox), running against the production build. Add one smoke test: the home page loads.
   Done when: `npx playwright test` passes in all 6 combinations. Refs: plan §3.1.
