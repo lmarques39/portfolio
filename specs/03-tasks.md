@@ -17,7 +17,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: a push to `main` updates the public `.vercel.app` URL, served over HTTPS. Refs: NFR-09.
 - [x] **T03 - Set up Playwright.** Two screen sizes (375×812, 1440×900) × three engines (Chromium, WebKit, Firefox), running against the production build. Add one smoke test: the home page loads.
   Done when: `npx playwright test` passes in all 6 combinations. Refs: plan §3.1.
-- [ ] **T04 - Content types and site content.** `content/types.ts` (SiteContent, Project) and `content/site.ts` (name, role, stack, hero text, header and footer labels, contact URLs, 404 text).
+- [x] **T04 - Content types and site content.** `content/types.ts` (SiteContent, Project) and `content/site.ts` (name, role, stack, hero text, header and footer labels, contact URLs, 404 text).
   Done when: removing any field from `site.ts` makes `npm run build` fail. Refs: NFR-03, plan §2.3.
 - [ ] **T05 - `ExternalLink` component.** Every link that opens in a new tab uses it.
   Done when: a test checks that it renders `target="_blank"` and `rel="noopener noreferrer"`. Refs: plan §2.4.

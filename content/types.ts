@@ -1,39 +1,37 @@
+// The shape of all site-wide text (NFR-03). Every field is required,
+// so a missing one fails `npm run build`.
 export type SiteContent = {
-    name: string;
-    role: string;
-    stack: string[];
-    url: string;
-    cv: {
-        label: string;
-        href: string;
-    };
-    hero: {
-        intro: string;
-        projectsLinkLabel: string;
-    };
-    projectsSection: {
-        heading: string;
-        linksPreview?: {
-            label: string;
-            href: string;
-        }[];
-    }
-    contact: {
-        githubUrl: string;
-        githubLabel: string;
-        linkedinUrl: string;
-        linkedinLabel: string;
-        email: string;
-    };
-    notFound: {
-        message: string;
-        backHomeLabel: string;
-    };
-    meta: {
-        homeTitle: string;
-        homeDescription: string;
-        notFoundTitle: string;
-    };
+  name: string;
+  role: string;
+  stack: string[];
+  url: string;
+  cv: {
+    label: string;
+    href: string;
+  };
+  hero: {
+    intro: string;
+    projectsLinkLabel: string;
+  };
+  projectsSection: {
+    heading: string;
+  };
+  contact: {
+    githubUrl: string;
+    githubLabel: string;
+    linkedinUrl: string;
+    linkedinLabel: string;
+    email: string;
+  };
+  notFound: {
+    message: string;
+    backHomeLabel: string;
+  };
+  meta: {
+    homeTitle: string;
+    homeDescription: string;
+    notFoundTitle: string;
+  };
 };
 
 // One project page. Fields follow the 8 page sections in spec §2, in order.
@@ -65,7 +63,7 @@ export type Project = {
   }[];
   // 8. Links
   links: {
-    // Optional: only added once the previewec §2, US-10).
+    // Optional: only added once the preview shows fake data only (spec §2, US-10).
     preview?: string;
     code: string;
   };
