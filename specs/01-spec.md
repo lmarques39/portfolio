@@ -58,7 +58,7 @@
 
 - Client data (§5.5): every screenshot, video and live preview uses fake data only (made-up names, phones, emails and listings). The Habilux and Taysil previews currently show some real data, so they get cleaned before launch, and their `Live preview` link only goes on the site once they're clean. The clients' own production sites are not touched and not linked. Every preview section and video has the caption "All data shown is fictional."
 
-- Feature videos: Claude records the Habilux and Taysil videos from their cleaned previews (browser recording with Playwright), and Luís checks them. Luís records the Cuddly video from his phone screen, because it's a mobile app.
+- Feature videos: all 3 are recordings of the real projects running with fake data. Habilux and Taysil are recorded from their cleaned previews. Cuddly is recorded as two phones side by side (two caregivers): an entry logged on one phone appears on the other, which shows the live sharing feature.
 
 - Domain: the free Vercel URL (`<name>.vercel.app`) for now. A bought domain can be added later without changing this spec.
 
