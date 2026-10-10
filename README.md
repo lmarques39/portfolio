@@ -13,11 +13,18 @@ I'm using Spec-Driven Development, which means that every decision is written do
 | Document | What it defines |
 | --- | --- |
 | [Constitution](specs/00-constitution.md) | Contains the **purpose**, the **target audience**, the **language**, the **projects featured**, the **principles**, the **out of scope** features that won't be touched and the **definition of done** of this project |
-| Spec | *in progress* |
+| [Spec](specs/01-spec.md) | Contains the **pages**, the **decisions**, the **user stories**, the **non-functional requirement** and **open questions** of the project |
+| [Plan](specs/02-plan.md) | Contains the **tech stack**, the **structure**, the **testing**, the **work outside of code**, the **schedule**, the **risks** and what's the **next** step on the project |
+| [Tasks](specs/03-tasks.md) | Contains the **milestones** divided by sections with checkboxes with the tasks required to make the project |
 
 ## Tech stack
 
-> To be defined in the plan (02-plan.md)
+- Next.js (App Router) + TypeScript
+- Tailwind CSS v4
+- Playwright for testing
+- Hosted on Vercel
+
+Details and reasons in the [plan](specs/02-plan.md#1-tech-stack).
 
 ## Contact
 - [GitHub](https://github.com/lmarques39/)
