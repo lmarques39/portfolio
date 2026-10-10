@@ -26,6 +26,11 @@
 
 - Project page URLs: `/projects/cuddly`, `/projects/habilux`, `/projects/taysil`.
 
+- One-line descriptions on the cards:
+  - Cuddly: "A mobile app for tracking pregnancy and a newborn's first months, shared between caregivers."
+  - Habilux: "A real-estate agency website with live listings pulled from Imovirtual."
+  - Taysil: "B2B catalogue website for an industrial products company, built with Next.js and Sanity."
+
 - Every project page follows the same structure, modelled on the Cuddly showcase page (`https://lmarques39.github.io/cuddly-app/`):
   1. Name and one-line description
   2. Overview: what the project is and who it's for
@@ -45,13 +50,21 @@
 
   | Project | Live preview | Code |
   | --- | --- | --- |
-  | Cuddly | `https://lmarques39.github.io/cuddly-app/` (showcase page with the APK) | public GitHub repo |
-  | Habilux | `https://habilux.vercel.app/` | public GitHub repo |
-  | Taysil | `https://taysil-demo.vercel.app/` | public GitHub repo |
+  | Cuddly | `https://lmarques39.github.io/cuddly-app/` (showcase page with the APK) | `https://github.com/lmarques39/cuddly-app` |
+  | Habilux | `https://habilux.vercel.app/` | `https://github.com/lmarques39/habilux` |
+  | Taysil | `https://taysil-demo.vercel.app/` | `https://github.com/lmarques39/taysil` |
 
   `Live preview` and `Code` links open in a new browser tab, the same way the CV does.
 
 - Client data (§5.5): every screenshot, video and live preview uses fake data only (made-up names, phones, emails and listings). The Habilux and Taysil previews currently show some real data, so they get cleaned before launch, and their `Live preview` link only goes on the site once they're clean. The clients' own production sites are not touched and not linked. Every preview section and video has the caption "All data shown is fictional."
+
+- Feature videos: Claude records the Habilux and Taysil videos from their cleaned previews (browser recording with Playwright), and Luís checks them. Luís records the Cuddly video from his phone screen, because it's a mobile app.
+
+- Domain: the free Vercel URL (`<name>.vercel.app`) for now. A bought domain can be added later without changing this spec.
+
+- Analytics: Vercel Analytics, which counts visits without cookies, so the site needs no cookie banner.
+
+- Link previews: every page has its own Open Graph image, so a link shared on LinkedIn shows a preview. Home shows my name and role; each project page shows that project's logo and name.
 
 - Contact section: serves as footer section on every page and contains:
   - GitHub: `https://github.com/lmarques39`
@@ -203,6 +216,7 @@ Source: Constitution §5.2
 - **Given** I see a `Preview` section or a video, **when** I look under it, **then** I see the caption "All data shown is fictional."
 - **Given** I click a `Live preview` link, **when** the preview opens, **then** it shows only fake data.
 - **Given** I look at any project page, **when** I check every link, **then** none of them points to the client's own production site.
+- **Given** I open the Habilux or Taysil code repo, **when** I search its files (including seed data and example files), **then** I find no real customer names, phones, emails or addresses.
 
 Source: Constitution §5.5
 
@@ -219,17 +233,12 @@ These apply to every page (Home, the 3 project pages and the 404). Each one has 
 | NFR-04 | Accessibility follows WCAG 2.2 AA basics: text contrast of at least 4.5:1, alt text on every image (a logo's alt text is the project name), every link and button usable with the keyboard with a visible focus outline, one main heading (`h1`) per page, and the page language set to English. | axe DevTools shows 0 serious or critical issues on every page, and a keyboard-only pass (Tab, Shift+Tab, Enter) reaches every link and button. | Constitution §2 |
 | NFR-05 | The site works in the latest versions of Chrome, Safari, Firefox and Edge on desktop, plus Safari on iPhone and Chrome on Android. | Run US-01 to US-10 in each browser. | Constitution §2 |
 | NFR-06 | Feature videos are MP4 files served with the site (no YouTube or other third-party player). Each one is 3 MB or less, has a poster image, has no sound, and only loads when the visitor scrolls near it. | Check each file's size; in DevTools → Network, the video only downloads after scrolling to it. | Constitution §5.4, §7 |
-| NFR-07 | Every page has its own title (for example `Cuddly — Luís Marques`) and a meta description. | View the page source, or the Lighthouse SEO audit. | Constitution §7 |
+| NFR-07 | Every page has its own title (for example `Cuddly — Luís Marques`), a meta description and an Open Graph image. | View the page source, or the Lighthouse SEO audit; paste the URL into LinkedIn's Post Inspector and check the preview image. | Constitution §7 |
 | NFR-08 | The Blender 3D element, if built, appears only in the hero, loads after the rest of the page, and has a static image in its place while loading or if it fails. If it brings any Lighthouse score below 90, it's replaced by a rendered image. | NFR-01 with and without the 3D element; block it in DevTools and check that the static image shows. | Constitution §6 |
 | NFR-09 | The site is served over HTTPS at a public URL. | Open the URL; the browser shows the padlock. | Constitution §7 |
+| NFR-10 | The site sets no cookies, so it needs no cookie banner. | DevTools → Application → Cookies is empty on every page. | Constitution §5.5 |
 
 
 ## 5. Open questions
 
-- What is the one-line description for each project card?
-- What are the GitHub repo URLs for Cuddly, Habilux and Taysil?
-- Is each project's unique feature in §2 the right one? (Written from constitution §4.)
-- Who records the feature videos, and how? (A plan question: they need the cleaned previews first.)
-- Which domain does the site use (a free one like `*.vercel.app`, or a bought one like `luismarques.dev`)?
-- Does the site use any analytics (visitor counting)? If yes, which one, and does it need a cookie banner?
-- Should a shared link show a preview image on LinkedIn (an Open Graph image)?
+_None for now._
