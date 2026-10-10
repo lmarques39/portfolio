@@ -209,7 +209,19 @@ Source: Constitution §5.5
 
 ## 4. Non-functional requirements
 
-_To do._
+These apply to every page (Home, the 3 project pages and the 404). Each one has a check that gives the same result whoever runs it.
+
+| ID | Requirement | How to check | Source |
+| --- | --- | --- | --- |
+| NFR-01 | Lighthouse scores of at least 90 in all 4 categories (Performance, Accessibility, Best Practices, SEO), in mobile mode, on every page. | Chrome DevTools → Lighthouse → Mobile, in an incognito window, on the deployed site. | Constitution §7 |
+| NFR-02 | Every page works at 375px and 1440px, as described in US-08. | The US-08 checks, in DevTools device mode at both widths. | Constitution §5.1 |
+| NFR-03 | No visible text is written inside components. All text (hero, project content, labels, 404 message) lives in content files, one per page or project. This also makes the Portuguese version possible later. | Changing any sentence on the site means editing only a content file, never a component. A search of the components folder finds no sentences. | Constitution §3, §5.3 |
+| NFR-04 | Accessibility follows WCAG 2.2 AA basics: text contrast of at least 4.5:1, alt text on every image (a logo's alt text is the project name), every link and button usable with the keyboard with a visible focus outline, one main heading (`h1`) per page, and the page language set to English. | axe DevTools shows 0 serious or critical issues on every page, and a keyboard-only pass (Tab, Shift+Tab, Enter) reaches every link and button. | Constitution §2 |
+| NFR-05 | The site works in the latest versions of Chrome, Safari, Firefox and Edge on desktop, plus Safari on iPhone and Chrome on Android. | Run US-01 to US-10 in each browser. | Constitution §2 |
+| NFR-06 | Feature videos are MP4 files served with the site (no YouTube or other third-party player). Each one is 3 MB or less, has a poster image, has no sound, and only loads when the visitor scrolls near it. | Check each file's size; in DevTools → Network, the video only downloads after scrolling to it. | Constitution §5.4, §7 |
+| NFR-07 | Every page has its own title (for example `Cuddly — Luís Marques`) and a meta description. | View the page source, or the Lighthouse SEO audit. | Constitution §7 |
+| NFR-08 | The Blender 3D element, if built, appears only in the hero, loads after the rest of the page, and has a static image in its place while loading or if it fails. If it brings any Lighthouse score below 90, it's replaced by a rendered image. | NFR-01 with and without the 3D element; block it in DevTools and check that the static image shows. | Constitution §6 |
+| NFR-09 | The site is served over HTTPS at a public URL. | Open the URL; the browser shows the padlock. | Constitution §7 |
 
 
 ## 5. Open questions
@@ -218,3 +230,6 @@ _To do._
 - What are the GitHub repo URLs for Cuddly, Habilux and Taysil?
 - Is each project's unique feature in §2 the right one? (Written from constitution §4.)
 - Who records the feature videos, and how? (A plan question: they need the cleaned previews first.)
+- Which domain does the site use (a free one like `*.vercel.app`, or a bought one like `luismarques.dev`)?
+- Does the site use any analytics (visitor counting)? If yes, which one, and does it need a cookie banner?
+- Should a shared link show a preview image on LinkedIn (an Open Graph image)?
