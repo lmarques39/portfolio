@@ -21,7 +21,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: removing any field from `site.ts` makes `npm run build` fail. Refs: NFR-03, plan §2.3.
 - [x] **T05 - `ExternalLink` component.** Every link that opens in a new tab uses it.
   Done when: a test checks that it renders `target="_blank"` and `rel="noopener noreferrer"`. Refs: plan §2.4.
-- [ ] **T06 - CV file.** The final CV saved as `public/luis-marques-cv.pdf`.
+- [x] **T06 - CV file.** The final CV saved as `public/luis-marques-cv.pdf`.
   Done when: `/luis-marques-cv.pdf` opens on the deployed site. Refs: US-01.
 - [ ] **T07 - Layout and header.** `app/layout.tsx` with `lang="en"`; the header has the name (link to Home) and `View CV`.
   Done when: `tests/us-01-cv.spec.ts` passes for criteria 1, 3, 4 and 5. Refs: US-01.
