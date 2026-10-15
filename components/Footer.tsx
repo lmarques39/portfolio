@@ -10,9 +10,9 @@ export default function Footer() {
 
   return (
     <footer className="mt-auto border-t border-foreground/10">
-      <div className="mx-auto max-w-5xl px-4 py-8">
+      <div className="mx-auto max-w-5xl px-4 py-8 text-center">
         <h2 className="font-semibold">{contact.heading}</h2>
-        <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm justify-center">
           <li>
             {/* The visible text is the address itself, so it can still be
                 read and copied with no mail app (US-02, plan §2). */}
