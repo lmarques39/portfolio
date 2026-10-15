@@ -17,6 +17,7 @@ export type SiteContent = {
     heading: string;
   };
   contact: {
+    heading: string;
     githubUrl: string;
     githubLabel: string;
     linkedinUrl: string;

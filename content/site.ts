@@ -27,6 +27,7 @@ export const site: SiteContent = {
     heading: "Projects",
   },
   contact: {
+    heading: "Get in touch",
     githubUrl: "https://github.com/lmarques39",
     githubLabel: "GitHub",
     linkedinUrl: "https://www.linkedin.com/in/lu%C3%ADs-marques39/",

@@ -25,7 +25,7 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: `/luis-marques-cv.pdf` opens on the deployed site. Refs: US-01.
 - [x] **T07 - Layout and header.** `app/layout.tsx` with `lang="en"`; the header has the name (link to Home) and `View CV`.
   Done when: `tests/us-01-cv.spec.ts` passes for criteria 1, 3, 4 and 5. Refs: US-01.
-- [ ] **T08 - Footer.** GitHub, LinkedIn, and the email address as a visible `mailto:` link.
+- [x] **T08 - Footer.** GitHub, LinkedIn, and the email address as a visible `mailto:` link.
   Done when: `tests/us-02-email.spec.ts` and `tests/us-03-github-linkedin.spec.ts` pass. Refs: US-02, US-03.
 - [ ] **T09 - 404 page.** `app/not-found.tsx` with the message and a `Back to Home` button.
   Done when: `tests/us-09-not-found.spec.ts` passes (the project-URL check comes in T19). Refs: US-09.
