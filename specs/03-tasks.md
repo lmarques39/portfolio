@@ -27,9 +27,9 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
   Done when: `tests/us-01-cv.spec.ts` passes for criteria 1, 3, 4 and 5. Refs: US-01.
 - [x] **T08 - Footer.** GitHub, LinkedIn, and the email address as a visible `mailto:` link.
   Done when: `tests/us-02-email.spec.ts` and `tests/us-03-github-linkedin.spec.ts` pass. Refs: US-02, US-03.
-- [ ] **T09 - 404 page.** `app/not-found.tsx` with the message and a `Back to Home` button.
+- [x] **T09 - 404 page.** `app/not-found.tsx` with the message and a `Back to Home` button.
   Done when: `tests/us-09-not-found.spec.ts` passes (the project-URL check comes in T19). Refs: US-09.
-- [ ] **T10 - Home and 404 titles.** `metadata` with a title and description on the home page and the 404 page.
+- [x] **T10 - Home and 404 titles.** `metadata` with a title and description on the home page and the 404 page.
   Done when: each page shows its own title in the browser tab. Refs: NFR-07.
 
 **M1 check:** the header, footer and 404 page are live on the Vercel URL, and the US-01, US-02, US-03 and US-09 tests pass.

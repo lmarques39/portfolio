@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { site } from "@/content/site";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: site.meta.notFoundTitle,
+};
 
 // Shown for any URL that doesn't exist. It renders inside the root layout,
 // so the header and footer stay the same as on every other page (US-09).
