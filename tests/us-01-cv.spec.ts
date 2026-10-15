@@ -1,7 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-// US-01 - Recruiter gets my CV. Criterion 2 (hero button) comes with the
-// home page in M2.
+// US-01 - Recruiter gets my CV.
 
 // "Any page": Home, plus a URL that doesn't exist (the 404 page).
 const pages = ["/", "/does-not-exist"];
@@ -13,6 +12,17 @@ for (const path of pages) {
     await expect(cvLink).toBeVisible();
   });
 }
+
+// The home page has two View CV links (header and hero), so each test looks
+// inside one landmark: "banner" for the header, "main" for the hero.
+test("criterion 2: the home hero also has a View CV button", async ({ page }) => {
+  await page.goto("/");
+  const heroCvLink = page.getByRole("main").getByRole("link", { name: "View CV" });
+
+  await expect(heroCvLink).toBeVisible();
+  await expect(heroCvLink).toHaveAttribute("href", /\/luis-marques-cv\.pdf$/);
+  await expect(heroCvLink).toHaveAttribute("target", "_blank");
+});
 
 test("criterion 3: View CV opens the CV in a new tab, portfolio stays open", async ({ page }) => {
   await page.goto("/");
