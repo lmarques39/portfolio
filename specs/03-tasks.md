@@ -37,9 +37,9 @@ The plan in `02-plan.md`, split into small tasks. Each task fits in one sitting 
 
 ## M2 - Home page (by Sun 18 Oct)
 
-- [ ] **T11 - Hero.** Name, role, stack, a `View CV` button and a link to the projects section, all text from `site.ts`.
+- [x] **T11 - Hero.** Name, role, stack, a `View CV` button and a link to the projects section, all text from `site.ts`.
   Done when: US-01 criterion 2 passes. Refs: US-01, NFR-03.
-- [ ] **T12 - Project logos.** One SVG per project in `public/logos/`.
+- [x] **T12 - Project logos.** One image per project in `public/logos/`: the clients' real logos as PNG.
   Done when: all 3 files open in the browser. Refs: US-04.
 - [ ] **T13 - Project content files (card fields).** `content/projects/cuddly.ts`, `habilux.ts`, `taysil.ts` with `slug`, `name`, `oneLiner` and `logo`, plus `index.ts` in the order Cuddly, Habilux, Taysil. The other fields hold placeholder text for now.
   Done when: `npm run build` passes. Refs: spec §2, plan §2.3.

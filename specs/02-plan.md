@@ -13,7 +13,7 @@ How the site in `01-spec.md` gets built, tested and shipped by 31 October 2026. 
 | Hosting | Vercel, free `.vercel.app` URL | HTTPS by default, and a preview URL for every push. | NFR-09 |
 | Analytics | Vercel Analytics (`@vercel/analytics`) | Cookieless, so no banner. | NFR-10 |
 | Fonts | `next/font` | Self-hosted, no layout shift. | NFR-01 |
-| Images | `next/image`, SVG logos | Correct sizes on each screen. | NFR-01 |
+| Images | `next/image`, PNG/SVG logos | Correct sizes on each screen. | NFR-01 |
 | Tests | Playwright | Automates the clickable criteria at 375px and 1440px in 3 browser engines. Also records the feature videos. | §3 of the spec |
 | Accessibility check | axe DevTools (browser extension) | Finds contrast and label problems. | NFR-04 |
 
@@ -51,7 +51,7 @@ content/
   types.ts                the SiteContent and Project types
 public/
   luis-marques-cv.pdf     US-01
-  logos/                  one SVG per project
+  logos/                  one image per project
   screenshots/<slug>/     fake data only (US-10)
   videos/<slug>.mp4       ≤ 3 MB each (NFR-06)
   videos/<slug>.jpg       poster images
@@ -139,7 +139,8 @@ These block content, so they start in week 1, alongside the coding.
 | Clean the Taysil preview (`taysil-demo.vercel.app`) so it shows only fake data | 23 Oct |
 | Search the Habilux and Taysil repos for real customer data, including git history. Deleting a file doesn't remove it from history; if real data is in the history, the repo gets rewritten or made private. | 23 Oct |
 | Final CV as `luis-marques-cv.pdf` | 14 Oct |
-| Project logos as SVG | 18 Oct |
+| Project logos (the clients' real logo files, as PNG) | 18 Oct |
+| Cuddly logo, replacing the placeholder | 26 Oct |
 | Screenshots of each project with fake data | 23 Oct |
 | Cuddly video: the app's web version in two phone-sized windows side by side, on the Firebase emulator with fake data, recorded with Playwright. Logging an entry on one phone makes it appear on the other. | 25 Oct |
 | Habilux and Taysil videos: Playwright recordings of the cleaned previews | 25 Oct |
